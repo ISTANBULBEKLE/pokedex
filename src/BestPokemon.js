@@ -5,7 +5,7 @@ const BestPokemon = () => {
   return (
     <div>
       <p>Best Pokemon for me is X</p>
-      <ul>
+      <ul >
         {abilities.map((item) => (
           <li> {item} </li>
         ))}
