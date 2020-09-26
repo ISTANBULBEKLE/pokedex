@@ -1,38 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 // import ReactDOM from 'react-dom';
 import "./index.css";
 // import App from './App';
 import Logo, { NewName } from "./Logo";
 import BestPokemon from "./BestPokemon";
+import CaughtPokemon from "./CaughtPokemon";
 
-
-  function logWhenClicked() {
-    console.log("Button was clicked!");
-  }
-
-
-
+function logWhenClicked() {
+  console.log("Button was clicked!");
+}
 
 function App() {
   const abilities = ["Anticipation", "Adaptability", "Run-Away"];
 
   return (
-    <div class="headingWithImg">
+    <div className="headingWithImg">
       {" "}
-      <Logo appName="Pokedex" appName2="Huseein" />{" "}
+      <Logo
+        callLogo={logWhenClicked}
+        appName="Pokedex"
+        appName2="Huseein"
+      />{" "}
       <BestPokemon abilities={abilities} />
-      <CaughtPokemon />{" "}
-      <logWhenClicked/>
+      <CaughtPokemon />
     </div>
   );
 }
-
-function CaughtPokemon() {
-  const date = new Date().toLocaleDateString();
-  return <p>Caught 0 Pokemon on{date}</p>;
-}
-
-
-
 
 export default App;

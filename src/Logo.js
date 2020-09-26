@@ -1,19 +1,19 @@
 import React from "react";
 
-const Logo = (props) => {
+const Logo = ({ callLogo, appName, appName2 }) => {
   // const appName = 'Pokedex';
 
-  function logWhenClicked() {
+  /*   function logWhenClicked() {
     console.log("Button was clicked!");
-  }
+  } */
 
   return (
     <header>
       <h1>
-        Welcome to {props.appName}, {props.appName2}
+        Welcome to {appName}, {appName2}
       </h1>
       <img
-        onClick={props.logWhenClicked}
+        onClick={callLogo}
         src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
       />
     </header>
