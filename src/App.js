@@ -5,6 +5,14 @@ import "./index.css";
 import Logo, { NewName } from "./Logo";
 import BestPokemon from "./BestPokemon";
 
+
+  function logWhenClicked() {
+    console.log("Button was clicked!");
+  }
+
+
+
+
 function App() {
   const abilities = ["Anticipation", "Adaptability", "Run-Away"];
 
@@ -14,6 +22,7 @@ function App() {
       <Logo appName="Pokedex" appName2="Huseein" />{" "}
       <BestPokemon abilities={abilities} />
       <CaughtPokemon />{" "}
+      <logWhenClicked/>
     </div>
   );
 }
@@ -22,5 +31,8 @@ function CaughtPokemon() {
   const date = new Date().toLocaleDateString();
   return <p>Caught 0 Pokemon on{date}</p>;
 }
+
+
+
 
 export default App;
