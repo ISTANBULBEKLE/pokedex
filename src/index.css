@@ -14,3 +14,11 @@ code {
 .headingWithImg{
   text-align: center;
 }
+.li-element{
+  text-align: center;
+  list-style: none;
+}
+.pok-list-ele{
+    text-align: center;
+  list-style: none;
+}

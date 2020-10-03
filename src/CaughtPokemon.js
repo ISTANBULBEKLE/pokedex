@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 
 function CaughtPokemon() {
-  const [caught, setCaught] = useState(["a", "b", "picachu", "mextoo"]);
+  const [caught, setCaught] = useState([
+    "salazar",
+    "wurteg",
+    "picachu",
+    "mextoo",
+  ]);
 
   function UpdateCaught() {
     setCaught(caught.concat("newtoo"));
@@ -18,7 +23,11 @@ function CaughtPokemon() {
       </button>
       <ul>
         {caught.map((item, index) => {
-          return <li key={index}>{item} </li>;
+          return (
+            <li className="li-element" key={index}>
+              {item}{" "}
+            </li>
+          );
         })}
       </ul>
     </div>

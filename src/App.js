@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-// import ReactDOM from 'react-dom';
 import "./index.css";
-// import App from './App';
 import Logo, { NewName } from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
+import PokemonMovesSelector from "./PokemonMovesSelector";
+import PokemonCity from "./PokemonCity";
 
 function logWhenClicked() {
   console.log("Button was clicked!");
@@ -23,6 +23,8 @@ function App() {
       />{" "}
       <BestPokemon abilities={abilities} />
       <CaughtPokemon />
+      <PokemonMovesSelector />
+      <PokemonCity />
     </div>
   );
 }
