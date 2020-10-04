@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function PokemonCity() {
+function PokemonCity(props) {
   const [city, setCity] = useState("");
 
   function updateCity(event) {

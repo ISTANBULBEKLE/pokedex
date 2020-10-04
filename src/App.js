@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./index.css";
-import Logo, { NewName } from "./Logo";
+import Logo  from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 import PokemonMovesSelector from "./PokemonMovesSelector";
